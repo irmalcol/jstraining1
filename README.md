@@ -1,1 +1,1 @@
-# jstraining1
+# This is the class starter file

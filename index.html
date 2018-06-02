@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="shortcut icon" href="#" />
+    <title>
+      (Another) Weather App
+    </title>
+    <meta name="description" content="____Description____">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="assets/weather-icons.min.css">
+  </head>
+  <body class='warm'>
+    <div class='wrapper'>
+      <search>
+        <form>
+          <input class='searchbar transparent' id='search' type='text' placeholder='enter city, country' />
+          <button class='button transparent'>GO</button>
+          <label for="search"></label>
+        </form>
+      </search>
+      <div class="panel">
+        <h2 class="city"></h2>
+        <div class="weather" id="weather">
+          <div class="group secondary">
+            <h3 class="current-time"></h3>
+            <h3 class="current-condition"></h3>
+          </div>
+          <div class="group secondary">
+            <h3 class="wind">Wind: <span class="value"></span> kph</h3>
+            <h3 class="humidity">Humidity <span class="value"></span>%</h3>
+          </div>
+          <div class="temperature" id="temperature">
+            <h1 class="temp" id="temp">
+              <span class="main-icon wi"></span>
+              <span class="main-temperature"><span class="value"></span>&deg;C</span>
+            </h1>
+          </div>
+          <div class="forecast"></div>
+        </div>
+      </div>
+  </body>
+</html>
