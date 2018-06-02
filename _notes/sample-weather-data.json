@@ -1,0 +1,40 @@
+{
+	"coord": {
+		"lon": -113.49,
+		"lat": 53.54
+	},
+	"weather": [{
+		"id": 801,
+		"main": "Clouds",
+		"description": "few clouds",
+		"icon": "02n"
+	}],
+	"base": "stations",
+	"main": {
+		"temp": 6,
+		"pressure": 1016,
+		"humidity": 100,
+		"temp_min": 6,
+		"temp_max": 6
+	},
+	"visibility": 14484,
+	"wind": {
+		"speed": 1.5,
+		"deg": 60
+	},
+	"clouds": {
+		"all": 20
+	},
+	"dt": 1527915600,
+	"sys": {
+		"type": 1,
+		"id": 3162,
+		"message": 0.0042,
+		"country": "CA",
+		"sunrise": 1527937815,
+		"sunset": 1527998071
+	},
+	"id": 5946768,
+	"name": "Edmonton",
+	"cod": 200
+}

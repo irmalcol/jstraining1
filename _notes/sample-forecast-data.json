@@ -1,0 +1,123 @@
+{
+	"city": {
+		"id": 5946768,
+		"name": "Edmonton",
+		"coord": {
+			"lon": -113.4688,
+			"lat": 53.5501
+		},
+		"country": "CA",
+		"population": 712391
+	},
+	"cod": "200",
+	"message": 10.5121393,
+	"cnt": 5,
+	"list": [{
+		"dt": 1527879600,
+		"temp": {
+			"day": 6,
+			"min": 2.74,
+			"max": 6,
+			"night": 2.74,
+			"eve": 6,
+			"morn": 6
+		},
+		"pressure": 943.85,
+		"humidity": 68,
+		"weather": [{
+			"id": 500,
+			"main": "Rain",
+			"description": "light rain",
+			"icon": "10n"
+		}],
+		"speed": 1.96,
+		"deg": 133,
+		"clouds": 92
+	}, {
+		"dt": 1527966000,
+		"temp": {
+			"day": 16.32,
+			"min": 0.14,
+			"max": 18.04,
+			"night": 8.17,
+			"eve": 18.04,
+			"morn": 0.14
+		},
+		"pressure": 945.34,
+		"humidity": 60,
+		"weather": [{
+			"id": 800,
+			"main": "Clear",
+			"description": "sky is clear",
+			"icon": "01d"
+		}],
+		"speed": 8.76,
+		"deg": 308,
+		"clouds": 0
+	}, {
+		"dt": 1528052400,
+		"temp": {
+			"day": 18.79,
+			"min": 3.24,
+			"max": 22.64,
+			"night": 18.72,
+			"eve": 22.64,
+			"morn": 3.24
+		},
+		"pressure": 945.97,
+		"humidity": 43,
+		"weather": [{
+			"id": 800,
+			"main": "Clear",
+			"description": "sky is clear",
+			"icon": "01d"
+		}],
+		"speed": 1.86,
+		"deg": 130,
+		"clouds": 0
+	}, {
+		"dt": 1528138800,
+		"temp": {
+			"day": 19.89,
+			"min": 14.79,
+			"max": 23.61,
+			"night": 14.79,
+			"eve": 23.61,
+			"morn": 19.36
+		},
+		"pressure": 937.4,
+		"humidity": 0,
+		"weather": [{
+			"id": 501,
+			"main": "Rain",
+			"description": "moderate rain",
+			"icon": "10d"
+		}],
+		"speed": 6.9,
+		"deg": 155,
+		"clouds": 91,
+		"rain": 8.53
+	}, {
+		"dt": 1528225200,
+		"temp": {
+			"day": 14.28,
+			"min": 11.29,
+			"max": 18.27,
+			"night": 12.12,
+			"eve": 18.27,
+			"morn": 11.29
+		},
+		"pressure": 942.95,
+		"humidity": 0,
+		"weather": [{
+			"id": 501,
+			"main": "Rain",
+			"description": "moderate rain",
+			"icon": "10d"
+		}],
+		"speed": 2.74,
+		"deg": 254,
+		"clouds": 62,
+		"rain": 3.93
+	}]
+}
