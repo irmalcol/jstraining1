@@ -1,6 +1,6 @@
 weatherApp.renderCurrentWeatherInformation = function (weatherData) {
-    console.log('Made it into render-ui-from-data.js!');
-    console.log(weatherData);
+    // console.log('Made it into render-ui-from-data.js! renderCurrentWeatherInformation');
+    // console.log(weatherData);
 
     var daysOfWeek = [
         'Sunday',
@@ -43,4 +43,28 @@ weatherApp.renderCurrentWeatherInformation = function (weatherData) {
     humidityElement.innerHTML = weatherData.humidity;
 
     weatherApp.adjustAppBackgroundColor(weatherData.temperature);
+}
+
+weatherApp.renderForecastWeatherInformation = function (forecastData) {
+    // console.log('Made it into render-ui-from-data.js! renderForecastWeatherInformation');
+    // console.log(forecastData);
+
+    var forecastElement = document.querySelector('.forecast');
+    // console.log(forecastElement);
+    // console.log(currentDay);
+    var html = '';
+    forecastData.forEach( dayData => {
+        html += `
+        <div class="block">
+            <h3 class="secondary">${dayData.day}</h3>
+            <span class="wi wi-owm-${dayData.icon}"></span>
+            <h2 class="high">${dayData.high}</h2>
+            <h4 class="secondary">${dayData.low}</h4>
+        </div>
+        `
+    });
+
+    forecastElement.innerHTML = html;
+
+    // console.log(html);
 }

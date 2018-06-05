@@ -2,8 +2,9 @@ var weatherApp = {};
 
 document.addEventListener('DOMContentLoaded', function() {
     var onGeoDataReceived = function (coordinatesData) {
-        console.log('onGeoDataReceived ', coordinatesData);
+        // console.log('onGeoDataReceived ', coordinatesData);
         weatherApp.getWeatherData(coordinatesData, onCurrentWeatherDataReceived);
+        weatherApp.getForecastData(coordinatesData, onForcastWeatherDataReceived);
     }
 
     var onCurrentWeatherDataReceived = function (weatherData) {
@@ -15,10 +16,20 @@ document.addEventListener('DOMContentLoaded', function() {
             weatherApp.renderCurrentWeatherInformation(sanitizedWeatherData);
         }
     }
+    
+    var onForcastWeatherDataReceived = function (forecastData) {
+        var sanitizedForecastData = weatherApp.sanitizeForcastWeatherData(JSON.parse(forecastData));
+        if (sanitizedForecastData === null) {
+            // Show error UI
+        } else {
+            weatherApp.renderForecastWeatherInformation(sanitizedForecastData);
+        }
+    }
 
     document.querySelector('form .button').addEventListener('click', function(event) {
         var searchValue = document.querySelector('.searchbar').value;
         weatherApp.getWeatherData(searchValue, onCurrentWeatherDataReceived);
+        weatherApp.getForecastData(searchValue, onForcastWeatherDataReceived);
         event.preventDefault();
     });
 
